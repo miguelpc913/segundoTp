@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".RecepcionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Recepcion"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nombreAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="100sp"
+        android:inputType="textPersonName"
+        android:hint="Nombre" />
+
+    <RadioGroup
+        android:layout_width="208dp"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupTipo">
+
+        <RadioButton
+            android:id="@+id/radioButtonPerro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gato" />
+
+        <RadioButton
+            android:id="@+id/radioButtonConejo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conejo"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/razaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10sp"
+        android:inputType="textPersonName"
+        android:hint="Raza" />
+
+    <EditText
+        android:id="@+id/edadAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Edad"
+        android:layout_marginTop="10sp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Causa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10sp"
+        android:hint="Causa de atencion" />
+
+    <Button
+        android:id="@+id/subirMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Subir datos" />
+
+
+</LinearLayout>
